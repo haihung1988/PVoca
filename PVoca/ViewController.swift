@@ -12,7 +12,16 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let names = ["Chris", "Alex", "Ewa", "Barry", "Daniella"]
+        
+        func backwards(s1: String, s2: String) -> Bool {
+            return s1 > s2
+        }
+        
+        let reversed = names.sorted(by: backwards)
+        
+        if (true) { print(reversed) }
     }
 
     override func didReceiveMemoryWarning() {
